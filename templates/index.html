@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <h1 style="color: green">Weather App</h1>
+        <form id="weather-form" method="POST" action="/get_weather">
+          <input
+            type="text"
+            name="city"
+            id="city-input"
+            placeholder="Enter city name"
+          />
+          <button type="submit" id="city-input-btn">Get Weather</button>
+        </form>
+        <div id="weather-info">
+          <h3 id="city-name"></h3>
+          <p id="date"></p>
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="wind-speed"></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("weather-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const city = document.getElementById("city-input").value;
+        const formData = new FormData();
+        formData.append("city", city);
+
+        const response = await fetch("/get_weather", {
+          method: "POST",
+          body: formData,
+        });
+        const data = await response.json();
+
+        if (response.ok) {
+          document.getElementById("city-name").textContent = data.name;
+          document.getElementById("temperature").textContent = data.temp;
+          document.getElementById("description").textContent = data.description;
+          document.getElementById("wind-speed").textContent = data.wind_speed;
+          document.getElementById("weather-info").style.display = "block";
+        } else {
+          alert(data.error);
+        }
+      };
+    </script>
+  </body>
+</html>
