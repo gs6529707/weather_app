@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App - Documentation</title>
-</head>
-<body>
-    <h1>Weather App 🌤️</h1>
+
+<h1>Weather App 🌤️</h1>
     <p>A web-based application built with Python Flask that allows users to fetch real-time weather information for any city. The app integrates the OpenWeatherMap API to display weather details such as temperature, wind speed, and a short description.</p>
 
   <h2>Features</h2>
@@ -103,5 +96,4 @@ venv\Scripts\activate       # For Windows</pre>
     </ul>
 
    <h2>🌟 Star this repository if you found it useful!</h2>
-</body>
-</html>
+
