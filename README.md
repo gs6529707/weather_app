@@ -4,53 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App - Documentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1, h2 {
-            color: #4caf50;
-        }
-        code {
-            background: #e4e4e4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #f4f4f4;
-            padding: 10px;
-            border-left: 5px solid #4caf50;
-            overflow-x: auto;
-        }
-        ul {
-            margin: 20px 0;
-        }
-        .project-structure {
-            background: #fafafa;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .screenshot img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        a {
-            color: #2196f3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <h1>Weather App 🌤️</h1>
@@ -108,7 +61,7 @@ venv\Scripts\activate       # For Windows</pre>
         <li><strong>Set Up OpenWeatherMap API Key:</strong>
             <ul>
                 <li>Obtain your API key from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>.</li>
-                <li>Replace the placeholder <code>f00c38e0279b7bc85480c3fe775d518c</code> in <code>app.py</code> with your API key.</li>
+                <li>Replace the placeholder <code>f00c380279b7bc85480c3fe775d518c</code> in <code>app.py</code> with your API key.</li>
             </ul>
         </li>
     </ol>
@@ -126,11 +79,8 @@ venv\Scripts\activate       # For Windows</pre>
         </li>
     </ol>
 
-  <h2>Screenshots</h2>
-    <div class="screenshot">
-        <p><strong>Home Page:</strong></p>
-        <img src="screenshot_home.png" alt="Weather App Home Page">
-    </div>
+  
+
 
   <h2>Technologies Used</h2>
     <ul>
@@ -140,19 +90,12 @@ venv\Scripts\activate       # For Windows</pre>
         <li><strong>Styling Frameworks:</strong> Google Fonts, Custom CSS</li>
     </ul>
 
-  <h2>Future Enhancements</h2>
-    <ul>
-        <li>🌦️ Add weather icons based on conditions.</li>
-        <li>🗓️ Display a 5-day weather forecast.</li>
-        <li>🛠️ Improve error handling for invalid inputs.</li>
-    </ul>
+  
 
   <h2>License</h2>
-    <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+    <p>This project is licensed under the MIT License.</p>
 
-  <h2>Contributing</h2>
-    <p>Contributions are welcome! Feel free to open issues or submit pull requests. For major changes, please open an issue first to discuss what you would like to change.</p>
-
+  
   <h2>Acknowledgments</h2>
     <ul>
         <li>OpenWeatherMap API for providing the weather data.</li>
